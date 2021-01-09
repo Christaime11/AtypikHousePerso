@@ -107,7 +107,7 @@ return [
         'fields'         => [
             'id'                     => 'ID',
             'id_helper'              => ' ',
-            'name'                   => 'Titre',
+            'name'                   => 'Nom de l\'Habitat',
             'name_helper'            => ' ',
             'description'            => 'Description',
             'description_helper'     => ' ',
