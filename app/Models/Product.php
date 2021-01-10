@@ -56,6 +56,7 @@ class Product extends Model implements HasMedia
         'has_chauffage',
         'has_climatiseur',
         'has_internet',
+        'validation',
         'created_at',
         'updated_at',
         'deleted_at',

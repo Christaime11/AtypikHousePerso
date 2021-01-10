@@ -135,6 +135,8 @@ return [
             'has_climatiseur_helper' => ' ',
             'has_internet'           => 'Vous avez un accès Internet ?',
             'has_internet_helper'    => ' ',
+            'validation'             => 'Validé',
+            'validation_helper'      => ' ',
         ],
     ],
 ];
