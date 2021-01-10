@@ -61,6 +61,9 @@
                                         {{ trans('cruds.product.fields.photo') }}
                                     </th>
                                     <th>
+                                        {{ trans('cruds.product.fields.validation') }}
+                                    </th>
+                                    <th>
                                         &nbsp;
                                     </th>
                                 </tr>
@@ -112,6 +115,9 @@
                                                     <img src="{{ $media->getUrl('thumb') }}">
                                                 </a>
                                             @endforeach
+                                        </td>
+                                        <td>
+                                            {{ $product->validation ?? '' }}
                                         </td>
                                         <td>
                                             @can('product_show')

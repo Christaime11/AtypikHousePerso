@@ -129,6 +129,14 @@
                             @endif
                             <span class="help-block">{{ trans('cruds.product.fields.photo_helper') }}</span>
                         </div>
+                        <div class="form-group {{ $errors->has('validation') ? 'has-error' : '' }}">
+                            <label for="validation">{{ trans('cruds.product.fields.validation') }}</label>
+                            <input class="form-control" type="number" name="validation" id="validation" value="{{ old('validation', $product->validation) }}" step="1">
+                            @if($errors->has('validation'))
+                                <span class="help-block" role="alert">{{ $errors->first('validation') }}</span>
+                            @endif
+                            <span class="help-block">{{ trans('cruds.product.fields.validation_helper') }}</span>
+                        </div>
                         <div class="form-group">
                             <button class="btn btn-danger" type="submit">
                                 {{ trans('global.save') }}
