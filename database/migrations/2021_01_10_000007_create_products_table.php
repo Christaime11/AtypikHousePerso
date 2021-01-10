@@ -19,6 +19,7 @@ class CreateProductsTable extends Migration
             $table->string('has_chauffage')->nullable();
             $table->string('has_climatiseur')->nullable();
             $table->string('has_internet')->nullable();
+            $table->integer('validation')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

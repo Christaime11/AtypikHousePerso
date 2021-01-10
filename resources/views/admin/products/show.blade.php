@@ -119,6 +119,14 @@
                                         @endforeach
                                     </td>
                                 </tr>
+                                <tr>
+                                    <th>
+                                        {{ trans('cruds.product.fields.validation') }}
+                                    </th>
+                                    <td>
+                                        {{ $product->validation }}
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                         <div class="form-group">
